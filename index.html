@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <main class="body">
+            <div class="calculate">
+                <header>
+                    <h3>Mortgage Calculator</h3>
+                    <div class="reload">
+                        <a href="">Clear All</a>
+                    </div>
+                </header>
+                <div class="form">
+                    <form>
+                        <div class="amount">
+                        <label for="amount">Mortgage Amount</label><br><br>
+                        <div id="amount" class="amountt">
+                            <span>$</span>
+                            <input type="number"  id="Amount" min="1" required><br>
+                        </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="term">
+                                <label for="Mortgage Term">Mortgage Term</label><br><br>
+                                <div id="term">
+                                    <input type="number"  id="Term" min="1" required>
+                                    <span>months</span>
+                                </div>
+                            </div>
+                            <div class="rate">
+                                <label for="Interest Rate">Interest Rate</label><br><br>
+                                <div id="rate">
+                                    <input type="number"  id="Rate" min="1" max="100"  required>
+                                    <span>%</span>
+                                </div>
+                            </div>
+                        </div><br> 
+                        <div class="type">
+                            <label for="Mortgage type">Mortgage Type</label><br><br>
+                            <div class="roww">
+                                <label for="" id="type-1">
+                                <input type="radio" name="type" id="repayments">     Repayment
+                                </label><br><br><br>
+                                
+                            </div>
+                            <div class="rowww">
+                                <label for="" id="type-2">
+                                <input type="radio" name="type" id="interest">     Interest Only
+                                </label>
+                            </div>
+                            
+                
+                        </div>
+                        
+                    </form>
+                    <div id="button">
+                        <button >
+                            <img src="./image/icon-calculator.svg"><br>
+                            <p>calculate Repayments</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div id="image">
+                    <img src="./image/illustration-empty.svg">
+                    <h3>Results shown here</h3><br>
+                    <p>Complete the form and click "calculate repayments" to <br> see what your monthly repayments would be</p>
+                </div>
+                <div id="results">
+                    <h3>Your result</h3><br>
+                    <h4>Your results are shown below based on the information <br> you provided.To adjust this results, adjust the form and click on "calculate repayment" again.</h4><br><br>
+            
+                    <div class="box">
+                        <h4>Your monthly repayments</h4><br>
+                        <div class="myResult">
+                            <p></p>
+                        </div><br><br>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

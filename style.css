@@ -1,0 +1,368 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+
+}
+
+body{
+    font-family: Plus Jakarta Sans, sans-serif;
+    background-color: hsl(200, 26%, 54%);
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main{
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 100vh;
+    overflow: hidden;
+    height: fit-content;
+    font-family: Plus Jakarta Sans;
+    color:hsl(202, 55%, 16%);
+    border-radius: 40px;
+    
+}
+
+.calculate{
+    overflow: hidden;
+    
+    background-color: white;
+    height: 35rem;
+    width: 28rem;
+    border-radius: 40px 0 0 40px;
+    padding-left: 40px;
+}
+header{
+    display: flex;
+    gap: 8rem;
+    padding-top:40px ;
+    padding-bottom: 30px;
+}
+header h3{
+    color:hsl(202, 55%, 16%);
+    
+}
+header a {
+    color:hsl(202, 55%, 16%);
+}
+#amount{
+    display: flex;
+    align-items: center;
+}
+
+
+#amount span{
+    border: 1px solid  ;
+    border-color:hsl(202, 55%, 16%)  rgb(222, 238, 242)hsl(202, 55%, 16%)hsl(202, 55%, 16%);
+    height: 40px;
+    background-color:rgb(222, 238, 242) ;
+    width: 40px;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.amount input{
+    width: 21rem;
+    height: 40px;
+    margin-left: 0px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid;
+    border-color:hsl(202, 55%, 16%)hsl(202, 55%, 16%)hsl(202, 55%, 16%)rgb(222, 238, 242) ;
+}
+.row{
+    display: flex;
+    gap: 45px;
+}
+.row input{
+    height: 40px;
+    width: 7rem;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid;
+    border-color: hsl(202, 55%, 16%)rgb(222, 238, 242)   hsl(202, 55%, 16%)hsl(202, 55%, 16%);
+}
+#term{
+    display: flex;
+    align-items: center;
+}
+#term span{
+    /* margin-left: -3.8px; */
+    border: 1px solid;
+    height: 40px;
+    padding-top: 10px;
+    width: 60px;
+    /* padding: 9.1px 20px 11px 0; */
+    border-radius:0 5px 5px 0 ;
+    background-color:rgb(222, 238, 242) ;
+    border-color:hsl(202, 55%, 16%)hsl(202, 55%, 16%)hsl(202, 55%, 16%) rgb(222, 238, 242);
+}
+#rate{
+    display: flex;
+    align-items: center;
+}
+#rate span{
+    margin-left: -4px;
+    border: 1px solid;
+    height: 40px;
+    padding: 9.1px 20px 11px 0;
+    border-radius:0 5px 5px 0 ;
+    background-color:rgb(222, 238, 242) ;
+    border-color:hsl(202, 55%, 16%)hsl(202, 55%, 16%)hsl(202, 55%, 16%)rgb(222, 238, 242);
+}
+
+.roww label {
+    border: 1px solid rgb(222, 238, 242)  ;
+    padding: 10px 16rem 10px 10px;
+    border-radius: 5px;
+    
+}
+.rowww label {
+    border: 1px solid rgb(222, 238, 242)  ;
+    padding: 10px 15.5rem 10px 10px;
+    border-radius: 5px;
+    
+}
+#button{
+    margin-top: 50px;
+}
+button{
+    display: flex;
+    align-items: center;
+    background-color: hsl(61, 70%, 52%);
+    border-color: hsl(61, 70%, 52%);
+    border-radius: 20px;
+    color: hsl(202, 55%, 16%);
+    width: 14rem;
+    height: 40px;
+    justify-content: center;
+    box-shadow: none;
+    gap: 5px;
+}
+
+
+.image{
+    position: relative;
+    background-color: hsl(202, 55%, 16%);
+    height: 35rem;
+    width: 29rem;
+    padding: 56px;
+    
+    border-radius: 0px 40px 40px 110px;
+    color: white;
+}
+
+#image img{
+    margin-left: 5rem;
+    height: 50%;
+    width: 50%;
+}
+#image h3 ,p{
+    text-align: center;
+}
+#results{
+    display: none;
+}
+#results {
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: left;
+    height: 100vh;
+    
+}
+.box{
+    background-color:hsl(201, 92%, 10%);
+    height: 16rem;
+    width: 23rem;
+    border-radius: 20px  20px 10px 10px;
+    border: 10px solid ;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-color:hsl(61, 70%, 52%) hsl(201, 92%, 10%)hsl(201, 92%, 10%)hsl(201, 92%, 10%);; 
+
+    
+
+}
+.myResult{
+    color: hsl(61, 70%, 52%) ;
+    font-weight: bolder;
+    font-size: 50px;
+}
+hr{
+    color: hsl(61, 70%, 52%);
+}
+
+
+@media screen and (max-width:851px){
+    .calculate{
+        width: 25rem;
+
+    }
+    header{
+        gap: 6rem;
+    }
+    .amount input{
+        width: 19rem;
+    }
+    .row input{
+        width: 6rem;
+    }
+    .roww label{
+        padding: 10px 14rem 10px 10px;
+    }
+    .rowww label{
+        padding: 10px 13.5rem 10px 10px;
+    }
+    .image{
+        width: 25rem;
+    }
+    .box{
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width:769px){
+    body{
+        height: 100%;
+    }
+   main{
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 50px;
+    margin-top: 40px;
+   }
+   .calculate{
+    border-radius: 0;
+
+   }
+   .image{
+    border-radius: 0;
+   }
+}
+
+@media screen and (max-width:426px){
+    .calculate{
+    width: 25rem;
+    height: 40rem;
+
+   }
+   header{
+    display: flex;
+    gap: 6rem;
+   }
+   .amount input{
+    width: 18rem;
+   }
+   .row{
+    flex-direction: column;
+    gap: 10px;
+   }
+   .term input{
+    width: 17rem;
+   }
+   .rate input{
+    width: 18rem;
+   }
+   .roww label{
+    padding: 10px 14rem 10px 10px;
+   }
+   .rowww label{
+    padding: 10px 13.3rem 10px 10px;
+   }
+
+
+   .image{
+    width: 25rem;
+   }
+   .box{
+       width: 19rem;
+   }
+}
+@media screen and (max-width:401px){
+    .calculate{
+        width: 24rem;
+    }
+    .image{
+        width: 24rem;
+    }
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media screen and (max-width:380px){
+    .calculate{
+        width: 23rem;
+    }
+    .image{
+        width: 23rem;
+    }
+}
+
+@media screen and (max-width:376px){
+    main{
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    .calculate{
+        padding-left: 30px;
+    }
+    #amount input{
+        width: 17rem;
+    }
+    .row input{
+        width: 16rem;
+    }
+    .roww label{
+        padding: 10px 13rem 10px 10px;
+    }
+    .rowww label{
+        padding: 10px 12.5rem 10px 10px;
+    }
+    .box{
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width:321px){
+    .calculate{
+        margin-left: 40px;
+    }
+    header{
+    display: flex;
+    gap: 4rem;
+   }
+   .image{
+    width: 27.5rem;
+   }
+   #results{
+    margin-left: 30px;
+   }
+}
+
+@media screen and (max-width:320px){
+    .calculate{
+        width: 22rem;
+        padding-left: 20px;
+    }
+    .image{
+        width: 22rem;
+    }
+    header{
+        gap: 10px;
+    }
+    .amount input{
+        width: 13rem;
+    }
+}
